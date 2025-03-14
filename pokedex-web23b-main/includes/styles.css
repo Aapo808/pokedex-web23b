@@ -1,0 +1,111 @@
+*{
+  display: flexbox;
+}
+h1 {
+  color: forestgreen;
+  width: auto;
+
+  text-align: center;
+}
+
+#sukupolvet{
+
+  text-align: center;
+  display: flexbox;
+
+  
+}
+#sukupolvet :hover{
+  background-color: forestgreen;
+  
+}
+#sukupolvet a{
+  
+  background-color: rgb(116, 215, 116);
+  padding: 20px;
+}
+
+#pokemonit :hover{
+  background-color: forestgreen;
+}
+
+#pokemonit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2%;
+  align-items: center;
+}
+
+#pokemoni {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.pokemon {
+    background-color: rgb(116, 215, 116);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#pokemon1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pokemon1 h2 {
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+#pokemon1 img {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.types-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.type-badge {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.stats-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.stats-container li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-container li:last-child {
+    border-bottom: none;
+}
+
+.pokemon p {
+    text-align: center;
+    margin: 10px 0;
+}
