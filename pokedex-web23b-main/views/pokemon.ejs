@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="/inc/styles.css">
-</head>
-<body>
+<%- include('header.ejs') %>
 
-    <h1>Pokedex</h1>
 
     <div id="pokemoni">
         <div class="pokemon">
@@ -26,6 +17,7 @@
             <div class="stats-container">
                 <% pokemon.stats.forEach(stat => { %>
                     <li>
+
                         <strong>
                             <% if (stat.stat.name === 'hp') { %> HP
                             <% } else if (stat.stat.name === 'attack') { %> Hyökkäys
@@ -35,11 +27,13 @@
                             <% } else if (stat.stat.name === 'speed') { %> Nopeus
                             <% } %>
                         </strong>
+
                         <%= stat.base_stat %>
                     </li>
                 <% }) %>
             </div>
         </div>
     </div>
-</body>
-</html>
+    <%- include('footer.ejs') %>
+
+
